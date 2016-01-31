@@ -11,8 +11,7 @@ Using the *bigram language model* trained on Corpus A provided below, find out w
 
 Assignment:
 ---
-    1. Write a program to compute the bigrams for any given input. 
-Apply your program to compute the bigrams you need for this homework. 
+    1. Write a program to compute the bigrams for any given input. Apply your program to compute the bigrams you need for this homework. 
     2. Construct the tables with the bigram counts for the two sentences above.
 
 For each of the three scenarios:
