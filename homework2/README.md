@@ -11,10 +11,11 @@ Using the *bigram language model* trained on Corpus A provided below, find out w
 
 Assignment:
 ---
-    1. Write a program to compute the bigrams for any given input. Apply your program to compute the bigrams you need for this homework. 
-    2. Construct the tables with the bigram counts for the two sentences above.
+    1. Write a program to compute the bigrams for any given input.
+    2. Apply your program to compute the bigrams you need for this homework. 
+    3. Construct the tables with the bigram counts for the two sentences above.
 
 For each of the three scenarios:
 
-    3. Construct the table with the bigram probabilities for the sentences.
-    4. Compute the total probabilities for each sentence S1 and S2.
+    4. Construct the table with the bigram probabilities for the sentences.
+    5. Compute the total probabilities for each sentence S1 and S2.
