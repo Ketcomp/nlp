@@ -8,7 +8,7 @@ def splitAtSpaces(fileToSplit):
 
 #Split words in bigrams and return a list of bigrams
 def wordsToBigrams(words):
-    bigrams = [(words[element-1],words[element]) for element in range(1,(words.__len__()-1))]
+    bigrams = [(words[element-1],words[element]) for element in range(1,(words.__len__()))]
     return bigrams
 
 #Count the # of occurrences of bigrams and return a dictionary counting occurrences of bigrams
@@ -23,6 +23,24 @@ def countWords(words):
     for word in words:
         wordOccurrences[word] += 1
     return wordOccurrences
+
+def bigOccurInSentence(sentence):
+    #Split sentence at spaces
+    words = splitAtSpaces(sentence)
+    #Calculate bigrams
+    return wordsToBigrams(words)
+
+#Generate the bigram count table
+def bigCountTable(sentence, bigrams):
+        listOfWords = splitAtSpaces(sentence)
+        # print(listOfWords)
+        sentenceBigrams = wordsToBigrams(listOfWords)
+        print(sentenceBigrams)
+        sentenceBigrams += [(word,word) for word in listOfWords]
+        print(sentenceBigrams)
+        # ctr = Counter()
+
+
 
 if __name__ == '__main__':
 
@@ -47,5 +65,10 @@ if __name__ == '__main__':
     # pprint.pprint(bigramOccurrences)
 
     #Calculate the values of N, V, c and c* & make all possible bigrams
-
+    bigOccurSentence1 = bigOccurInSentence("The president has relinquished his control of the company's board.")
+    bigOccurSentence2 = bigOccurInSentence("The chief executive officer said the last year revenue was good.")
+    # print("The bigrams for sentence 1 are: ", bigOccurSentence1)
+    # print("The bigrams for sentence 2 are: ", bigOccurSentence2)
+    bigCountTable("The president has relinquished his control of the company's board.", bigrams)
+    # print(bigramOccurrences[('the', "company's")])
     #Calculate probabilities
