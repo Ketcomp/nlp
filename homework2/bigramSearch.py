@@ -31,15 +31,10 @@ def bigOccurInSentence(sentence):
     return wordsToBigrams(words)
 
 #Generate the bigram count table
-def bigCountTable(sentence, bigrams):
-        listOfWords = splitAtSpaces(sentence)
-        # print(listOfWords)
-        sentenceBigrams = wordsToBigrams(listOfWords)
-        print(sentenceBigrams)
-        sentenceBigrams += [(word,word) for word in listOfWords]
-        print(sentenceBigrams)
-        # ctr = Counter()
-
+def bigCountForTable(sentence):
+    words = splitAtSpaces(sentence)
+    totalSentenceBigrams = [(a,b) for b in words for a in words]
+    print(totalSentenceBigrams)
 
 
 if __name__ == '__main__':
@@ -65,10 +60,6 @@ if __name__ == '__main__':
     # pprint.pprint(bigramOccurrences)
 
     #Calculate the values of N, V, c and c* & make all possible bigrams
-    bigOccurSentence1 = bigOccurInSentence("The president has relinquished his control of the company's board.")
-    bigOccurSentence2 = bigOccurInSentence("The chief executive officer said the last year revenue was good.")
-    # print("The bigrams for sentence 1 are: ", bigOccurSentence1)
-    # print("The bigrams for sentence 2 are: ", bigOccurSentence2)
-    bigCountTable("The president has relinquished his control of the company's board.", bigrams)
+    bigCountForTable("The president has relinquished his control of the company's board.")
     # print(bigramOccurrences[('the', "company's")])
     #Calculate probabilities
