@@ -1,0 +1,4 @@
+Implement the Viterbi algorithm and run it with the HMM in Fig 6.3 (see slide 191) to compute
+the most likely weather sequences for each of the two observation sequences above, 331122313
+and 331123312.
+The program should be able to accept other sequences as input.
