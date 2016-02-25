@@ -26,7 +26,6 @@ def bestSequenceFor(observation, a, b):
     return backPointers[1] if(backPointersFinal==1) else backPointers[2]
 
 def printResult(result):
-
     result = result[1:] # Remove the 'None' element
     # Reverse the list to get the actual order of states
     result = list(reversed(result))
@@ -52,8 +51,6 @@ if __name__ == '__main__':
          [1.0, 0.2, 0.4, 0.4],  # Probabilities of HOT state
          [1.0, 0.5, 0.4, 0.1],  # Probablities of COLD state
          [1.0, 1.0, 1.0, 1.0]]
-
-
 
     result1 = bestSequenceFor(observation1, a, b)
     printResult(result1)
