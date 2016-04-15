@@ -1,0 +1,26 @@
+Job description
+Our full stack engineers bridge the gap between backend data and the frontend websites of Yelp. Their goal is to provide the best user experience to millions of users and they’re excited to dive into any area of the web stack to make it happen. 
+
+Full stack engineers rarely have a typical day: One day they might be writing HTML/CSS/JavaScript and another they might be discussing the best approach making our web apps work in our service oriented architecture.
+
+Requirements
+Strong understanding of at least one popular server side MVC Framework (Django, Twisted, Rails, Pyramid, Codeigniter, Play, etc)
+Expertise in JavaScript, HTML and CSS/Sass
+Comfortable working in a Unix Environment
+Experience with both Backend and Frontend performance analysis
+Understanding of web security best practice
+
+Pluses
+Experience with TDD and code review
+Active contributor to open source software
+Experience with Google Closure Tools
+Experience with both mobile and desktop web application development
+Experience with Selenium Webdriver
+Experience with popular Python libraries/tools (sqlalchemy, pylint, tox, PyPI)
+
+
+Not interested in diving into everything? Want a more focused role? You might also consider Front-End Engineer or Back-End Engineer.
+
+
+
+Yelp values diversity. We’re proud to be an equal opportunity employer and consider qualified applicants without regard to race, color, religion, sex, national origin, ancestry, age, genetic information, sexual orientation, gender identity, marital or family status, veteran status, medical condition or disability. 
