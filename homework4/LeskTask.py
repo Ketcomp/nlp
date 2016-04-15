@@ -12,7 +12,7 @@ def printMeaning(valid, word, sense, maxCount):
         print("The word '" + word + "' has meaning :'" + sense +". Default meaning selected since results were inconclusive" )
         return
     elif valid =="Standard":
-        print("The word '" + word + "' has no disambiguity")
+        print("The word '" + word + "' has no disambiguation")
         return
 
 def findSense(sentence):
@@ -36,16 +36,16 @@ def findSense(sentence):
         maxCount = 0
         count = 0
         sense = "Nothing makes sense"
-        signature = []
         example_words = []
-        definition_words = []
 
         # For every meaning of the word,
         for meaning in wn.synsets(word):
             # Generate 'signature' by adding words from definition and examples.
             for each_usage in meaning.examples():
                 example_words += each_usage.split(" ")
+
             definition_words = meaning.definition().split(" ")
+
             signature = example_words + definition_words
 
             # How many times do the context words appear in the signature?
